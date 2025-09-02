@@ -29,6 +29,8 @@ app.get("/student",(req,res) =>{
         res.json(students)
 })
 
+// read by id 
+
 app.get("/student/:id",(req,res) =>{
     const id= parseInt(req.params.id)
 
