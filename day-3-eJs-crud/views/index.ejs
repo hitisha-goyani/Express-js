@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>student</h1>
+
+    <button> <a href="/add">add student</a></button>
+
+    <% students.forEach(student=> {%>
+        <table>
+            <tr>
+                <td>
+                    <%= student.name %>
+                </td>
+                <td>
+                    <button><a href="/edit/<%=student.id %>">edit</a></button></td>
+                <td>
+                    <button><a href="/delete/<%=student.id %>">delete</a> </button>
+                </td>
+
+            </tr>
+        </table>
+
+        <%})%>
+
+</body>
+
+</html>

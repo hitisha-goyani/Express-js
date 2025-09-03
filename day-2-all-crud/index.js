@@ -60,12 +60,13 @@ app.get("/student/:id",(req,res) =>{
 // add 
 
 app.post("/student/add",(req,res)=>{
+    const {name} = req.body
 
     console.log(req.body.name);
 
-const newStudent = {
+const newStudent = {    
     id:new Date().getTime(),
-    name:req.body,
+    name:name
 }
 
 students.push(newStudent)   

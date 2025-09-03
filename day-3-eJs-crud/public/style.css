@@ -1,0 +1,25 @@
+   table {
+            border: 1px solid black;
+            margin: 10px
+        }
+
+        button {
+            background-color: bisque;
+            border-radius: 20px;
+            padding: 5px 10px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+
+        h1{
+            color:blue;
+        }
