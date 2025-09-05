@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>edit</title>
+</head>
+<body>
+
+    
+    <h1>Edit Todo</h1>
+
+    <form action="/edit/<%= index %>" method="POST">
+        <input type="text" name="updatedTodo" value="<%= todo %>" required>
+        <button type="submit">Update</button>
+    </form>
+
+    <a href="/">Cancel</a>
+    
+</body>
+</html>
