@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do-app</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
 </head>
 <body>
 
     <h1>To-Do List</h1>
+
+    <div class="glass-box">
 
     <form action="/add" method="POST">
         <input type="text" name="newTodo" placeholder="add a new task" required>
@@ -19,24 +25,27 @@
     <ul>
         <% todos.forEach((todo,index )=>{%>
 
-            <div>
+            <div class="flex">
 
             
             <li>
                 <%= todo %>
              
             </li>
-                <button><a href="/edit/<%= index %>">Edit</a></button>
-                <button><a href="/delete/<%=index %>">Delete</a></button>
+                <button class="btn"><i class="fa-solid fa-pen me"></i><a href="/edit/<%= index %>">Edit</a></button>
+                <button class="btn"><i class="fas fa-trash me"></i><a href="/delete/<%=index %>">Delete</a></button>
             </div>
 
         <%})%>
     </ul>
-
-
-    <form action="/clear" method="POST">
+     <form action="/clear" method="POST">
         <button type="submit">clear All</button>
     </form>
+
+    </div>
+
+
+   
     
 </body>
 </html>

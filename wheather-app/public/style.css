@@ -1,0 +1,131 @@
+/* === Reset & Base === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+}
+
+h1 {
+  font-size: 2.5rem;
+
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+
+form {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 8px 2px #764ba2;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem 0;
+  background-color: #764ba2;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(118, 75, 162, 0.7);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a367e;
+  box-shadow: 0 6px 15px rgba(90, 54, 126, 0.9);
+}
+
+
+.weather-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2.5rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.weather-box p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.weather-box img {
+  margin-top: 1rem;
+  width: 120px;
+  height: 120px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.4rem;
+  background-color: #ffffff99;
+  color: #764ba2;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(90, 54, 126, 0.9);
+}
+
+a:hover {
+  background-color: #764ba2;
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(90, 54, 126, 0.9);
+}
